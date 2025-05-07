@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Hướng Dẫn Viên Ảo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- CSS tùy chỉnh cho nút chọn giọng -->
+    <style>
+        .voice-buttons {
+            margin-top: 10px;
+        }
+        .voice-buttons button {
+            background-color: #2e2e2e;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin-right: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .voice-buttons button:hover {
+            background-color: #555;
+        }
+        audio {
+            margin-top: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="is-preload-0 is-preload-1 is-preload-2">
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>Lựa chọn điểm đến</h1>
+            <p>Đồ án tốt nghiệp 2025 thực hiện bởi <a href="https://www.facebook.com/flowx.ns/">Trần Đình Khôi</a></p>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </header>
+
+        <!-- Thumbnail -->
+        <section id="thumbnails">
+            <!-- Hạ Long -->
+            <article>
+                <a class="thumbnail" href="images/fulls/halong.jpg" data-position="left center">
+                    <img src="images/thumbs/halong.jpg" alt="" />
+                </a>
+                <h2>Vịnh Hạ Long</h2>
+                <p>Vịnh Hạ Long, thuộc tỉnh Quảng Ninh, là một trong những kỳ quan thiên nhiên nổi tiếng nhất Việt Nam, được UNESCO công nhận là Di sản Thiên nhiên Thế giới. Với hơn 1.900 đảo đá vôi lớn nhỏ tạo thành cảnh quan kỳ vĩ giữa làn nước xanh ngọc, nơi đây thu hút hàng triệu du khách mỗi năm. Không chỉ nổi bật với vẻ đẹp thiên nhiên, Vịnh Hạ Long còn mang giá trị văn hóa, lịch sử và sinh thái đặc sắc, là điểm đến không thể bỏ qua..</p>
+
+                <!-- Nút chọn giọng -->
+                <div class="voice-buttons">
+                    <button onclick="setVoice('halong', 'male')">Giọng Nam</button>
+                    <button onclick="setVoice('halong', 'female')">Giọng Nữ</button>
+                </div>
+
+                <!-- Trình phát âm thanh -->
+                <audio id="audio-halong" controls>
+                    <source src="audio/halong_male.mp3" type="audio/mpeg">
+                    Trình duyệt của bạn không hỗ trợ trình phát âm thanh.
+                </audio>
+            </article>
+
+            <!-- Đồng Văn -->
+            <article>
+                <a class="thumbnail" href="images/fulls/dongvan.jpg">
+                    <img src="images/thumbs/dongvan.jpg" alt="" />
+                </a>
+                <h2>Cao nguyên đá Đồng Văn</h2>
+                <p>Công viên Địa chất Toàn cầu Cao nguyên đá Đồng Văn nằm ở tỉnh Hà Giang, được UNESCO công nhận năm 2010. Với diện tích hơn 2.300 km², nơi đây nổi bật với những dãy núi đá vôi hùng vĩ, hang động kỳ bí và dấu tích hóa thạch hàng trăm triệu năm tuổi. Không chỉ mang giá trị địa chất độc đáo, Đồng Văn còn là nơi sinh sống của nhiều cộng đồng dân tộc thiểu số, với văn hóa truyền thống đặc sắc và cảnh quan hoang sơ cuốn hút..</p>
+
+                <!-- Nút chọn giọng -->
+                <div class="voice-buttons">
+                    <button onclick="setVoice('dongvan', 'male')">Giọng Nam</button>
+                    <button onclick="setVoice('dongvan', 'female')">Giọng Nữ</button>
+                </div>
+
+                <!-- Trình phát âm thanh -->
+                <audio id="audio-dongvan" controls>
+                    <source src="audio/dongvan_male.mp3" type="audio/mpeg">
+                    Trình duyệt của bạn không hỗ trợ trình phát âm thanh.
+                </audio>
+            </article>
+			<!-- Lạng Sơn -->
+            <article>
+                <a class="thumbnail" href="images/fulls/langson.jpg" data-position="left center">
+                    <img src="images/thumbs/langson.jpg" alt="" />
+                </a>
+                <h2>Công viên địa chất Lạng Sơn</h2>
+                <p>Công viên địa chất toàn cầu Lạng Sơn là một di sản địa chất đặc sắc nằm ở vùng Đông Bắc Việt Nam. Nơi đây nổi bật với hệ thống núi đá vôi hùng vĩ, hang động kỳ thú và nhiều hóa thạch cổ đại có giá trị nghiên cứu cao. Bên cạnh cảnh quan thiên nhiên ấn tượng, công viên còn là nơi hội tụ văn hóa đa dạng của các dân tộc như Tày, Nùng, Dao. Du khách đến đây không chỉ được chiêm ngưỡng vẻ đẹp địa chất mà còn khám phá bản sắc văn hóa độc đáo và truyền thống lâu đời của vùng đất biên cương này.</p>
+
+                <!-- Nút chọn giọng -->
+                <div class="voice-buttons">
+                    <button onclick="setVoice('langson', 'male')">Giọng Nam</button>
+                    <button onclick="setVoice('langson', 'female')">Giọng Nữ</button>
+                </div>
+
+                <!-- Trình phát âm thanh -->
+                <audio id="audio-langson" controls>
+                    <source src="audio/langson_male.mp3" type="audio/mpeg">
+                    Trình duyệt của bạn không hỗ trợ trình phát âm thanh.
+                </audio>
+            </article>
+			            <!-- Đắk Nông -->
+            <article>
+                <a class="thumbnail" href="images/fulls/daknong.jpg" data-position="left center">
+                    <img src="images/thumbs/daknong.jpg" alt="" />
+                </a>
+                <h2>Công viên địa chất Đắk Nông</h2>
+                <p>Công viên địa chất Đắk Nông, thuộc tỉnh Đắk Nông, là một trong ba công viên địa chất toàn cầu của UNESCO tại Việt Nam. Nơi đây nổi bật với hệ thống hang động núi lửa dài nhất Đông Nam Á, cùng cảnh quan núi rừng, thác nước hùng vĩ và văn hóa đa dạng của hơn 40 dân tộc. Địa danh này không chỉ là di sản địa chất quý giá mà còn là điểm đến lý tưởng cho du lịch sinh thái, trải nghiệm văn hóa và khám phá khoa học độc đáo.</p>
+
+                <!-- Nút chọn giọng -->
+                <div class="voice-buttons">
+                    <button onclick="setVoice('daknong', 'male')">Giọng Nam</button>
+                    <button onclick="setVoice('daknong', 'female')">Giọng Nữ</button>
+                </div>
+
+                <!-- Trình phát âm thanh -->
+                <audio id="audio-daknong" controls>
+                    <source src="audio/daknong_male.mp3" type="audio/mpeg">
+                    Trình duyệt của bạn không hỗ trợ trình phát âm thanh.
+                </audio>
+            </article>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Trần Đình Khôi.</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Script đổi giọng -->
+    <script>
+        function setVoice(location, gender) {
+            const audio = document.getElementById(`audio-${location}`);
+            const source = audio.querySelector('source');
+            source.src = `audio/${location}_${gender}.mp3`;
+            audio.load();
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
